@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
-import Off from './componentes/img/off.png'
-import On from './componentes/img/on.png'
+import Led from './componentes/Led'
 
 export default function App(){
 
@@ -8,9 +7,7 @@ export default function App(){
 
   return(
     <>
-    <img src={ligado?On:Off}/>
-    <br></br>
-    <button onClick={()=>setLigado(!ligado)}>On/Off</button>
+      <Led/>
     </>
   )
 

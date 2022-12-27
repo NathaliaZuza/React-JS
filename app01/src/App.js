@@ -1,21 +1,17 @@
 import React,{useState} from 'react';
-import Numero from './componentes/Numero'
-
-// import Header from './componentes/Header'
-// import Corpo from './componentes/Corpo'
+import Off from './componentes/img/off.png'
+import On from './componentes/img/on.png'
 
 export default function App(){
 
-  const [num,setNum]=useState(10)
-
-  let n1=50
-
-
+  const [ligado,setLigado]=useState(true)
 
   return(
-   <>
-      <p>Valor do state num em App: {num}</p>
-      <Numero num={num} setNum={setNum}/>
-   </>
+    <>
+    <img src={ligado?On:Off}/>
+    <br></br>
+    <button onClick={()=>setLigado(!ligado)}>On/Off</button>
+    </>
   )
+
 }

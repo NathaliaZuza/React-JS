@@ -2,15 +2,16 @@ import React,{useState} from 'react';
 import Off from './img/off.png'
 import On from './img/on.png'
 
-export default function Led(){
+export default function Led(props){
 
-  const [ligado,setLigado]=useState(true)
 
   return(
     <>
-    <img src={ligado?On:Off}/>
+    <img src={props.ligado?On:Off}/>
     <br></br>
-    <button onClick={()=>setLigado(!ligado)}>{ligado?'Desligar':'Ligar'}</button>
+    <button onClick={()=>props.setLigado(!props.ligado)}>
+        {props.ligado?'Desligar':'Ligar'}
+    </button>
     </>
   )
 

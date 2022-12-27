@@ -3,11 +3,11 @@ import Led from './componentes/Led'
 
 export default function App(){
 
-  const [ligado,setLigado]=useState(true)
+  const [ligado,setLigado]=useState(false)
 
   return(
     <>
-      <Led/>
+      <Led ligado={ligado} setLigado={setLigado}/>
     </>
   )
 

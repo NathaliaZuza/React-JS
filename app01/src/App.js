@@ -1,11 +1,11 @@
 import React from 'react'
-import Renderizacao from './componentes/Renderizacao'
+import Lista from './componentes/Listas'
 
 export default function App(){
 
   return( 
     <>
-      <Renderizacao/>
+      <Lista/>
     </>
   )
 

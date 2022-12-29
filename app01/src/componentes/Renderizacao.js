@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React,{useState} from 'react'
 
 export default function Renderizacao() {
 
@@ -62,7 +62,7 @@ export default function Renderizacao() {
 
             <h2>Cores</h2>
             <p style={retornaCor(cor)}>Zuza</p>
-            <button onCLick={()=>mudaCor()}>Muda cor</button>
+            <button onClick={()=>mudaCor()}>Muda cor</button>
         </div>
     )
 }

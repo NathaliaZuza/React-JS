@@ -1,11 +1,11 @@
 import React from 'react'
-import Lista from './componentes/Listas'
+import Formulario from './componentes/Form'
 
 export default function App(){
 
   return( 
     <>
-      <Lista/>
+      <Formulario/>
     </>
   )
 

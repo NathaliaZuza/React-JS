@@ -1,11 +1,11 @@
 import React from 'react'
-import Formulario from './componentes/Form'
+import State from './componentes/State'
 
 export default function App(){
 
   return( 
     <>
-      <Formulario/>
+      <State/>
     </>
   )
 

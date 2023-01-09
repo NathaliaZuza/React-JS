@@ -1,11 +1,13 @@
 import React from 'react'
-import Effect from './componentes/effect'
+import ListaCarros from './componentes/listaCarros'
+import Styles from '../src/componentes/css/index.css'
 
 export default function  App(){
 
   return(
     <>
-      <Effect/>
+      <h1>Api</h1>
+      <ListaCarros/>
     </>
   )
 }
